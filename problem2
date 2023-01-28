@@ -1,0 +1,8 @@
+def postOrder(root):
+    
+    while root:
+        postOrder(root.left)
+        postOrder(root.right)
+        print(root.info, end=' ')
+        break
+    
